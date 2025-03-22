@@ -44,14 +44,18 @@ addEventListener('click', e => {
             body: JSON.stringify(img_data)
         })
         .then(response => response)
+        .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
+            const prediction = data.predictions[0];
+            document.getElementById("results").innerHTML = `Prediction: ${prediction}`;
         })
         .catch((error) => {
             console.error('Error:', error);
+            document.getElementById("results").innerHTML = "Error detecting digit.";
         });
 
-        document.getElementById("results").innerHTML = "Example Output"; //Output still needs to be formatted!
+        // document.getElementById("results").innerHTML = "Example Output"; //Output still needs to be formatted!
     }
 });
 

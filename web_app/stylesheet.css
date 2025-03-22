@@ -3,6 +3,89 @@ body {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    color: #333;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+.header{
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.number-drawing {
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+canvas {
+    border-radius: 4px;
+}
+
+.actions {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button#clear {
+    background-color: #dc3545;
+}
+
+button#detect {
+    background-color: #28a745;
+}
+
+
+.outcome {
+    padding:15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#results {
+    margin-top: 10px;
+    color: #007bff;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
     color: #000000;
 }
 
